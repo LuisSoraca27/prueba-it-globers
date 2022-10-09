@@ -1,0 +1,12 @@
+@mixin create-flexbox($justify) {
+    display: flex;
+    align-items: center;
+    justify-content:$justify;
+}
+
+@mixin add-background($url){
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

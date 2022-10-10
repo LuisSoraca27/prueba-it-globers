@@ -5,14 +5,14 @@
 .nav-container {
   width: 100%;
   position: absolute;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 25px;
+  padding-left: mixins.pixeles-rem(15);
+  padding-right: mixins.pixeles-rem(15);
+  padding-top: mixins.pixeles-rem(25);
   @include mixins.create-flexbox(space-between);
   z-index: 999;
 
   &__logo {
-    font-size: 35px;
+    font-size: mixins.pixeles-rem(35);
     color: variables.$color-primary;
   }
 
@@ -22,21 +22,21 @@
 
     li {
       text-decoration: none;
-      padding: 0 20px 0 20px;
+      padding: 0 mixins.pixeles-rem(20) 0 mixins.pixeles-rem(20);
       list-style: none;
 
       a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: mixins.pixeles-rem(15);
         color: variables.$color-primary;
         font-weight: bolder;
 
         img {
-          width: 30px;
-          height: 30px;
+          width: mixins.pixeles-rem(30);
+          height: mixins.pixeles-rem(30);
           display: block;
           margin: auto;
-          margin-bottom: 5px;
+          margin-bottom: mixins.pixeles-rem(5);
           filter: invert(100%) sepia(7%) saturate(0%) hue-rotate(135deg)
             brightness(108%) contrast(107%);
         }
@@ -46,10 +46,10 @@
 
   &__options-user button {
     background-color: transparent;
-    width: 90px;
-    height: 25px;
+    width: mixins.pixeles-rem(90);
+    height: mixins.pixeles-rem(25);
     border: none;
-    font-size: 12px;
+    font-size: mixins.pixeles-rem(12);
     color: variables.$color-primary;
   }
 }
@@ -84,19 +84,19 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
+    font-size: mixins.pixeles-rem(50);
     color: variables.$color-primary;
     z-index: 999;
   }
 
   &__button {
-    width: 110px;
-    height: 50px;
+    width: mixins.pixeles-rem(110);
+    height: mixins.pixeles-rem(50);
     background-color: transparent;
     color: variables.$color-primary;
     border: 2px solid variables.$color-primary;
     position: relative;
-    top: 150px;
+    top: mixins.pixeles-rem(150);
     letter-spacing: 3px;
     z-index: 999;
   }
@@ -110,15 +110,15 @@
 
   .section-one {
     width: 50%;
-    height: 550px;
+    height: mixins.pixeles-rem(550);
     @include mixins.create-flexbox(center);
     position: relative;
 
     &__text {
       color: variables.$color-primary;
       z-index: 999;
-      font-size: 18px;
-      padding: 10px 32px;
+      font-size: mixins.pixeles-rem(18);
+      padding: mixins.pixeles-rem(10) mixins.pixeles-rem(32);
       border: 3px solid white;
       letter-spacing: 5px;
     }
@@ -133,15 +133,15 @@
   }
   .section-two {
     width: 50%;
-    height: 550px;
+    height: mixins.pixeles-rem(550);
     @include mixins.create-flexbox(center);
     flex-direction: column;
-    padding: 50px 160px;
+    padding: mixins.pixeles-rem(50) mixins.pixeles-rem(160);
 
     &__img {
-      padding: 10px;
-      width: 160px;
-      height: 150px;
+      padding: mixins.pixeles-rem(10);
+      width: mixins.pixeles-rem(160);
+      height: mixins.pixeles-rem(150);
 
       img {
         width: 100%;
@@ -150,48 +150,48 @@
       }
     }
     &__title {
-      font-size: 30px;
-      margin-bottom: 15px;
-      margin-top: 15px;
+      font-size: mixins.pixeles-rem(30);
+      margin-bottom: mixins.pixeles-rem(15);
+      margin-top: mixins.pixeles-rem(15);
     }
     &__description {
       text-align: center;
-      margin-top: 25px;
-      margin-bottom: 20px;
-      font-size: 17px;
+      margin-top: mixins.pixeles-rem(25);
+      margin-bottom: mixins.pixeles-rem(20);
+      font-size: mixins.pixeles-rem(17);
     }
     &__ver-mas {
       font-style: italic;
       letter-spacing: 3px;
-      margin-top: 20px;
+      margin-top: mixins.pixeles-rem(20);
     }
   }
 
   .section-three {
-    padding: 70px;
+    padding: mixins.pixeles-rem(70);
     text-align: center;
 
     &__instagram {
-      font-size: 12px;
+      font-size: mixins.pixeles-rem(12);
       font-weight: 100;
       letter-spacing: 2px;
     }
     &__espufi {
-      font-size: 40px;
-      padding-top: 15px;
+      font-size: mixins.pixeles-rem(40);
+      padding-top: mixins.pixeles-rem(15);
     }
     .gallery {
-      width: 600px;
-      height: 400px;
+      width: mixins.pixeles-rem(600);
+      height: mixins.pixeles-rem(400);
       @include mixins.create-flexbox(center);
       flex-wrap: wrap;
       margin: auto;
-      margin-top: 70px;
-      margin-bottom: 70px;
+      margin-top: mixins.pixeles-rem(70);
+      margin-bottom: mixins.pixeles-rem(70);
 
       &__img {
-        width: 200px;
-        height: 200px;
+        width: mixins.pixeles-rem(200);
+        height: mixins.pixeles-rem(200);
         border: 1px solid white;
 
         img {
@@ -201,22 +201,22 @@
       }
     }
     &__newsletter {
-      font-size: 15px;
+      font-size: mixins.pixeles-rem(15);
       font-weight: 100;
       letter-spacing: 2px;
     }
 
     &__suscribite {
-      font-size: 35px;
+      font-size: mixins.pixeles-rem(35);
       letter-spacing: 2px;
       font-weight: 200;
-      margin: 10px auto;
+      margin: mixins.pixeles-rem(10) auto;
     }
 
     &__input {
       width: 100%;
-      height: 47px;
-      margin: 15px auto;
+      height: mixins.pixeles-rem(47);
+      margin: mixins.pixeles-rem(15) auto;
       border: 1.7px solid black;
       @include mixins.create-flexbox(center);
 
@@ -233,6 +233,13 @@
         @include mixins.add-background("../public/arrow-right-solid.svg");
         background-size: contain;
       }
+      
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
     }
   }
 }
@@ -259,20 +266,20 @@
 
 
   p {
-    padding: 5px;
-    font-size: 13px;
+    padding: mixins.pixeles-rem(5);
+    font-size: mixins.pixeles-rem(13);
     font-weight: 500;
   }
 
   .container {
     width: 20%;
-    padding: 30px;
+    padding: mixins.pixeles-rem(30);
   }
   .__one {
     width: 18%;
 
     h4 {
-      font-size: 40px;
+      font-size: mixins.pixeles-rem(40);
     }
   }
 
@@ -283,12 +290,12 @@
       @include mixins.create-flexbox(center);
     }
     img {
-      width: 40px;
-      height: 50px;
-      margin: 8px;
+      width: mixins.pixeles-rem(40);
+      height: mixins.pixeles-rem(50);
+      margin: mixins.pixeles-rem(8);
     }
     p {
-      font-size: 14px;
+      font-size: mixins.pixeles-rem(14);
       text-align: justify;
     }
   }
